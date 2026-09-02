@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiden Kennedy - Student ID</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Profile Section -->
+        <div class="profile-section">
+            <!-- Status Bar -->
+            <div class="status-bar">
+                <span class="time" id="time">11:55</span>
+                <div class="status-icons">
+                    <span class="wifi">📶</span>
+                    <span class="battery">🔋</span>
+                </div>
+            </div>
+
+            <!-- Profile Card (Swipeable) -->
+            <div class="swipe-container">
+                <div class="profile-card active" data-slide="0">
+                    <!-- Profile Avatar -->
+                    <div class="avatar-container">
+                        <div class="avatar">A</div>
+                    </div>
+
+                    <!-- Profile Info -->
+                    <div class="profile-info">
+                        <h1 class="name">Aiden Kennedy</h1>
+                        <p class="email">e558l834@ku.edu</p>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="divider"></div>
+
+                    <!-- Menu Items -->
+                    <div class="menu-container">
+                        <div class="menu-item">
+                            <span class="menu-icon">📁</span>
+                            <span class="menu-text">Files</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-icon">⚙️</span>
+                            <span class="menu-text">Settings</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-icon">❓</span>
+                            <span class="menu-text">Help</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-icon">👤</span>
+                            <span class="menu-text">Change User</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-icon">🚪</span>
+                            <span class="menu-text">Log Out</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 - Additional Info (swipe right/left to see) -->
+                <div class="profile-card" data-slide="1">
+                    <div class="info-slide">
+                        <h2>Student Information</h2>
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Aiden Kennedy</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">e558l834@ku.edu</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Status:</span>
+                            <span class="info-value">Active</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Student ID:</span>
+                            <span class="info-value">AK-2026-001</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 - Courses (swipe right/left to see) -->
+                <div class="profile-card" data-slide="2">
+                    <div class="courses-slide">
+                        <h2>Courses</h2>
+                        <div class="course-item">
+                            <span class="course-name">AI Skills & Verification</span>
+                            <span class="course-code">CS 301</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-name">Web Development</span>
+                            <span class="course-code">CS 201</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-name">Mobile App Design</span>
+                            <span class="course-code">CS 250</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-name">Database Systems</span>
+                            <span class="course-code">CS 320</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swipe Indicators -->
+            <div class="swipe-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+
+            <!-- Swipe Instructions -->
+            <div class="swipe-hint">
+                👆 Swipe to view more
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
